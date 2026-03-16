@@ -10,6 +10,53 @@
 <link rel="stylesheet"
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
+    /* Responsive Gallery */
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px,1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.gallery img{
+  width: 100%;
+  border-radius: 12px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.gallery img:hover{
+  transform: scale(1.05);
+}
+
+/* Modal Fullscreen */
+.modal{
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content{
+  margin: auto;
+  display: block;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close{
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: white;
+  font-size: 40px;
+  cursor: pointer;
+}
 <style>
     .spotify-box{
 text-align:center;
@@ -225,11 +272,18 @@ to{opacity:1;transform:translateY(0);}
 
 <h2>My Gallery</h2>
 
-<!-- IMAGE CHANGE KARNA -->
-<img src="IMG_20230222_180836.jpg">
-<img src="20240323_130555.jpg">
-<img src="IMG-20251223-WA0029.jpg">
-<img src="WhatsApp Image 2026-03-15 at 11.23.08 PM.jpeg">
+<div class="gallery">
+  <img src="IMG_20230222_180836.jpg" onclick="openModal(this)">
+  <img src="20240323_130555.jpg" onclick="openModal(this)">
+  <img src="IMG-20251223-WA0029.jpg" onclick="openModal(this)">
+  <img src="WhatsApp Image 2026-03-15 at 11.23.08 PM.jpeg" onclick="openModal(this)">
+</div>
+
+<!-- Fullscreen Modal -->
+<div id="imgModal" class="modal" onclick="closeModal()">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="fullImg">
+</div>
 
 </section>
 
@@ -243,5 +297,15 @@ menu.style.display=(menu.style.display==="block")?"none":"block";
 }
 </script>
 
+    <script>
+function openModal(img){
+  document.getElementById("imgModal").style.display="block";
+  document.getElementById("fullImg").src=img.src;
+}
+
+function closeModal(){
+  document.getElementById("imgModal").style.display="none";
+}
+</script>
 </body>
 </html>
