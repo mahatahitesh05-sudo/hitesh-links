@@ -10,6 +10,14 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
+.gallery-grid img{
+width:100%;
+height:250px;
+object-fit:cover;
+border-radius:12px;
+cursor:pointer;
+transition:.3s;
+}
 
 
 /* BACKGROUND BUBBLES */
@@ -84,7 +92,7 @@ z-index:999;
 padding-top:60px;
 left:0;top:0;
 width:100%;height:100%;
-background:rgb(255, 0, 255);
+background:rgb(70, 131, 184);
 }
 .modal-content{
 margin:auto;
@@ -208,10 +216,10 @@ padding:10px;
 <button class="spotify-btn"><i class="fab fa-spotify"></i></button>
 
 <div class="spotify-menu">
-<a href="#">❤️ Hindi Songs</a>
+<a href="#">❤️ Hindi</a>
 <a href="#">🌔 90s Hindi</a>
-<a href="#">🤟 English Songs</a>
-<a href="#">💖 Romantic Songs</a>
+<a href="#">🤟 English</a>
+<a href="#">💖 Romantic</a>
 </div>
 </div>
 
@@ -226,6 +234,9 @@ padding:10px;
 <img src="photo 2.jpg" onclick="openModal(this)">
 <img src="photo 3.jpg" onclick="openModal(this)">
 <img src="photo 4.jpg" onclick="openModal(this)">
+<img src="photo 5.jpg" onclick="openModal(this)">
+<img src="photo 6.png" onclick="openModal(this)">
+<img src="photo 7.jpeg" onclick="openModal(this)">
 </div>
 
 <div id="imgModal" class="modal" onclick="closeModal()">
