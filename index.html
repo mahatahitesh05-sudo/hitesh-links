@@ -10,6 +10,48 @@
 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
 <style>
+    /* SPOTIFY MENU DESIGN */
+.spotify-menu{
+display:none;
+margin-top:15px;
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:15px;
+}
+
+.music-card{
+text-decoration:none;
+color:#111;
+background:white;
+padding:12px 20px;
+border-radius:30px;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.music-card:hover{
+background:#1db954;
+color:white;
+transform:translateY(-5px) scale(1.05);
+box-shadow:0 10px 25px rgba(0,0,0,0.4);
+}
+
+.spotify-btn{
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.spotify-btn:hover{
+transform:scale(1.1);
+box-shadow:0 10px 25px rgba(0,0,0,0.5);
+}
+
+.gallery-grid img:hover{
+transform:scale(1.08);
+box-shadow:0 10px 25px rgba(0,0,0,0.3);
+}
+
 .gallery-grid img{
 width:100%;
 height:250px;
@@ -206,23 +248,36 @@ padding:10px;
 <section class="social" id="social">
 <h2>My Social Links</h2>
 
-<a href="#"><i class="fab fa-facebook"></i></a>
+<a href="https://fb.openinapp.co/57fgf" target="_blank">
+<i class="fab fa-facebook"></i>
+</a>
 <a href="#"><i class="fab fa-whatsapp"></i></a>
-<a href="#"><i class="fab fa-instagram"></i></a>
-<a href="#"><i class="fab fa-linkedin"></i></a>
-<a href="#"><i class="fab fa-youtube"></i></a>
+<a href="https://insta.openinapp.co/m21yk" target="_blank">
+<i class="fab fa-instagram"></i>
+</a>
+<a href="https://linkedin.openinapp.co/6ybk0" target="_blank">
+<i class="fab fa-linkedin"></i>
+</a>
+<a href="https://yt.openinapp.co/rvdof" target="_blank">
+<i class="fab fa-youtube"></i>
+</a>
 
 <div class="spotify-box">
 <button class="spotify-btn"><i class="fab fa-spotify"></i></button>
 
 <div class="spotify-menu">
-<a href="#">❤️ Hindi</a>
-<a href="#">🌔 90s Hindi</a>
-<a href="#">🤟 English</a>
-<a href="#">💖 Romantic</a>
-</div>
-</div>
 
+<a href="https://spotify.openinapp.co/qwism" target="_blank" class="music-card">❤️ Hindi</a>
+
+<a href="https://open.spotify.com/playlist/4soT4qEFcLqiYEVAhUGrtW?si=9a2542b2b62a463d" target="_blank" class="music-card">🌙 90s Hindi</a>
+
+<a href="https://spotify.openinapp.co/wodps" target="_blank" class="music-card">🎧 English</a>
+
+<a href="https://spotify.openinapp.co/ch3h9" target="_blank" class="music-card">💖 Romantic</a>
+
+<a href="https://spotify.openinapp.co/b07zg" target="_blank" class="music-card">✨ Bengali</a>
+
+</div>
 </section>
 
 <!-- GALLERY -->
@@ -265,6 +320,8 @@ function closeModal(){
 document.getElementById("imgModal").style.display="none";
 }
 </script>
+
+
 
 </body>
 </html>
