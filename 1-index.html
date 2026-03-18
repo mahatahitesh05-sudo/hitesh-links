@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Hitesh Kumar Mahata</title>
+
+<link rel="stylesheet" href="2-style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+<!-- BACKGROUND BUBBLES -->
+<div class="bg">
+<span></span><span></span><span></span><span></span>
+<span></span><span></span><span></span><span></span>
+</div>
+
+<!-- NAV -->
+<nav>
+<a href="#home">Home</a>
+<a href="#social">Social</a>
+<a href="#gallery">Gallery</a>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<h1>Hitesh Kumar Mahata</h1>
+<p>Student | Tech Learner</p>
+</section>
+
+<!-- SOCIAL -->
+<section class="social" id="social">
+<h2>My Social Links</h2>
+
+<a href="https://fb.openinapp.co/57fgf" target="_blank"><i class="fab fa-facebook"></i></a>
+<a href="#"><i class="fab fa-whatsapp"></i></a>
+<a href="https://insta.openinapp.co/m21yk" target="_blank"><i class="fab fa-instagram"></i></a>
+<a href="https://linkedin.openinapp.co/6ybk0" target="_blank"><i class="fab fa-linkedin"></i></a>
+<a href="https://yt.openinapp.co/rvdof" target="_blank"><i class="fab fa-youtube"></i></a>
+
+<div class="spotify-box">
+
+<button class="spotify-btn">
+<i class="fab fa-spotify"></i>
+</button>
+
+<div class="spotify-menu">
+
+<a href="https://spotify.openinapp.co/qwism" target="_blank" class="music-card">❤️ Hindi</a>
+
+<a href="https://open.spotify.com/playlist/4soT4qEFcLqiYEVAhUGrtW" target="_blank" class="music-card">🌙 90s Hindi</a>
+
+<a href="https://spotify.openinapp.co/wodps" target="_blank" class="music-card">👍 English</a>
+
+<a href="https://spotify.openinapp.co/ch3h9" target="_blank" class="music-card">🥵 Romantic</a>
+
+<a href="https://spotify.openinapp.co/b07zg" target="_blank" class="music-card">🌼 Bengali</a>
+
+</div>
+</div>
+
+</section>
+
+<!-- GALLERY -->
+<section id="gallery">
+<h2 style="text-align:center">My Gallery</h2>
+
+<div class="gallery-grid">
+<img src="photo 1.jpg" onclick="openModal(this)">
+<img src="photo 2.jpg" onclick="openModal(this)">
+<img src="photo 3.jpg" onclick="openModal(this)">
+<img src="photo 4.jpg" onclick="openModal(this)">
+<img src="photo 5.jpg" onclick="openModal(this)">
+<img src="photo 6.jpeg" onclick="openModal(this)">
+<img src="photo 7.jpg" onclick="openModal(this)">
+<img src="photo 8.jpg" onclick="openModal(this)">
+<img src="photo 9.jpg" onclick="openModal(this)">
+</div>
+
+<div id="imgModal" class="modal" onclick="closeModal()">
+<span class="close">&times;</span>
+<img class="modal-content" id="fullImg">
+</div>
+
+</section>
+
+<footer>
+<p>🤟</p>
+</footer>
+
+<script src="3-script.js"></script>
+
+</body>
+</html>
