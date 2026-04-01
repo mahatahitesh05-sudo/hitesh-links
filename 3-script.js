@@ -1,13 +1,26 @@
-// IMAGE MODAL
 function openModal(img){
-document.getElementById("imgModal").style.display="block";
-document.getElementById("fullImg").src=img.src;
+let modal = document.getElementById("imgModal");
+let modalImg = document.getElementById("fullImg");
+
+modal.style.display = "flex";   // force show
+modalImg.src = img.src;
+
+// scroll lock (VERY IMPORTANT for mobile)
+document.body.style.overflow = "hidden";
 }
 
 function closeModal(){
-document.getElementById("imgModal").style.display="none";
-}
+let modal = document.getElementById("imgModal");
+let modalImg = document.getElementById("fullImg");
 
+function closeModal(){
+let modal = document.getElementById("imgModal");
+
+modal.style.display = "none";
+
+// scroll wapas on
+document.body.style.overflow = "auto";
+}
 
 // TYPING EFFECT
 const texts = ["Student", "Tech Learner", "Video Editor", "Graphic Designer"];
