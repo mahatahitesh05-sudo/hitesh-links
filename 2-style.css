@@ -1,7 +1,7 @@
 body{
 margin:0;
 font-family:Arial;
-background:linear-gradient(120deg,#74ebd5,#ACB6E5);
+background:linear-gradient(120deg,#59b4bc,#ACB6E5);
 overflow-x:hidden;
 }
 
@@ -20,7 +20,7 @@ margin:0 15px;
 text-decoration:none;
 font-weight:bold;
 }
-nav a:hover{color:#00eaff}
+nav a:hover{color:#1100ff}
 
 /* HERO */
 .hero{text-align:center;padding:60px 20px}
@@ -34,20 +34,20 @@ margin:10px;
 padding:15px;
 font-size:22px;
 border-radius:50%;
-background:white;
+background:rgb(253, 252, 254);
 color:#111;
 transition:.3s;
 }
 .social a:hover{
 transform:scale(1.2);
-background:#00eaff;
+background:#0037ff;
 }
 
 /* SPOTIFY */
 .spotify-box{text-align:center;margin-top:15px}
 
 .spotify-btn{
-background:#1db954;
+background:#24a331;
 color:white;
 border:none;
 padding:12px 18px;
@@ -139,7 +139,7 @@ width:25px;
 height:25px;
 background:rgba(255,255,255,0.6);
 border-radius:50%;
-box-shadow:0 0 10px white,0 0 20px white,0 0 40px #00eaff;
+box-shadow:0 0 10px white,0 0 20px rgb(232, 232, 232),0 0 40px #effc00;
 animation:move linear infinite;
 }
 
@@ -151,6 +151,7 @@ animation:move linear infinite;
 .bg span:nth-child(6){left:60%;animation-duration:19s;}
 .bg span:nth-child(7){left:70%;animation-duration:27s;}
 .bg span:nth-child(8){left:80%;animation-duration:23s;}
+
 
 @keyframes move{
 0%{transform:translateY(100vh) scale(0.5);opacity:0;}
