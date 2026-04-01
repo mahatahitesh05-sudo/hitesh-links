@@ -38,10 +38,6 @@ background:rgb(253, 252, 254);
 color:#111;
 transition:.3s;
 }
-.social a:hover{
-transform:scale(1.2);
-background:#0037ff;
-}
 
 /* SPOTIFY */
 
@@ -121,4 +117,90 @@ animation:move linear infinite;
 0%{transform:translateY(100vh) scale(0.5);opacity:0;}
 50%{opacity:1;}
 100%{transform:translateY(-10vh) scale(1);opacity:0;}
+}
+/* ABOUT */
+.about{
+text-align:center;
+padding:40px 20px;
+max-width:700px;
+margin:auto;
+}
+
+.about h2{
+margin-bottom:15px;
+}
+
+.about p{
+font-size:16px;
+line-height:1.6;
+}
+
+/* SKILLS */
+.skills{
+text-align:center;
+padding:30px;
+}
+
+.skill{
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+background:white;
+border-radius:25px;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.skill:hover{
+transform:scale(1.1);
+background:#0037ff;
+color:white;
+}
+
+/* INTERESTS */
+.interests{
+text-align:center;
+padding:30px;
+}
+
+.interest{
+display:inline-block;
+margin:10px;
+padding:12px 20px;
+background:white;
+border-radius:25px;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.interest:hover{
+transform:scale(1.1) rotate(3deg);
+background:#0037ff;
+color:white;
+}
+
+/* CONTACT */
+.contact{
+text-align:center;
+padding:40px 20px;
+}
+
+.contact p{
+font-size:16px;
+font-weight:bold;
+}
+
+/* SMALL IMPROVEMENTS */
+h2{
+margin-top:20px;
+font-size:26px;
+}
+
+/* SOCIAL UPGRADE */
+.social a:hover{
+transform:scale(1.2) rotate(5deg);
+background:#0037ff;
+color:white;
 }
