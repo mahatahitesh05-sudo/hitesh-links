@@ -204,3 +204,30 @@ transform:scale(1.2) rotate(5deg);
 background:#0037ff;
 color:white;
 }
+section{
+opacity:1;
+transform:translateY(0);
+transition:0.6s;
+}
+
+.gallery-grid img{
+transition:0.3s;
+}
+
+.gallery-grid img:hover{
+transform:scale(1.05);
+}
+.contact p{
+color:#000;
+font-size:16px;
+font-weight:bold;
+}
+.contact a{
+color:#0037ff;
+text-decoration:none;
+font-weight:bold;
+}
+
+.contact a:hover{
+text-decoration:underline;
+}

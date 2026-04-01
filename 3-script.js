@@ -50,3 +50,35 @@ behavior: 'smooth'
 
 });
 });
+// SCROLL ANIMATION
+const sections = document.querySelectorAll("section");
+
+window.addEventListener("scroll", () => {
+sections.forEach(sec => {
+let top = window.scrollY;
+let offset = sec.offsetTop - 150;
+let height = sec.offsetHeight;
+
+if(top >= offset && top < offset + height){
+sec.style.opacity = "1";
+sec.style.transform = "translateY(0)";
+}
+});
+});
+// ACTIVE NAV
+let navLinks = document.querySelectorAll("nav a");
+
+window.addEventListener("scroll", () => {
+let fromTop = window.scrollY;
+
+navLinks.forEach(link => {
+let section = document.querySelector(link.getAttribute("href"));
+
+if(section.offsetTop <= fromTop + 100 &&
+section.offsetTop + section.offsetHeight > fromTop){
+link.style.color = "#00ffcc";
+}else{
+link.style.color = "white";
+}
+});
+});
