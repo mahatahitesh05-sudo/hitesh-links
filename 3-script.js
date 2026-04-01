@@ -2,23 +2,16 @@ function openModal(img){
 let modal = document.getElementById("imgModal");
 let modalImg = document.getElementById("fullImg");
 
-modal.style.display = "flex";   // force show
+modal.style.display = "flex";
 modalImg.src = img.src;
 
-// scroll lock (VERY IMPORTANT for mobile)
 document.body.style.overflow = "hidden";
 }
 
 function closeModal(){
 let modal = document.getElementById("imgModal");
-let modalImg = document.getElementById("fullImg");
-
-function closeModal(){
-let modal = document.getElementById("imgModal");
 
 modal.style.display = "none";
-
-// scroll wapas on
 document.body.style.overflow = "auto";
 }
 
